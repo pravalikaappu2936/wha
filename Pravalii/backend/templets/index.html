@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoiceGuard AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚨 VoiceGuard AI</h1>
+    <p>AI Voice Emotion Danger Detector for Women Safety</p>
+
+    <button onclick="startRecording()">🎤 Record Voice</button>
+    <button onclick="stopRecording()">⏹ Stop</button>
+
+    <form id="uploadForm" method="POST" action="/predict" enctype="multipart/form-data">
+        <input type="file" id="audioFile" name="audio" hidden>
+        <button type="submit">Analyze Emotion</button>
+    </form>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

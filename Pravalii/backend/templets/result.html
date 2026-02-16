@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Detection Result</h1>
+
+    <h2>Emotion: {{ emotion }}</h2>
+
+    {% if danger %}
+        <h2 class="danger">🚨 DANGER DETECTED</h2>
+    {% else %}
+        <h2 class="safe">You are Safe 😊</h2>
+    {% endif %}
+
+    <a href="/">Check Again</a>
+</div>
+
+</body>
+</html>
